@@ -3,33 +3,6 @@
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-a:hover {
-  color: red;
-}
-
-a:active {
-  color: green;
-}
-
-a:visited {
-  color: #000;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  color: #fff;
-  font-style: italic;
-  text-align: center;
-  float: inherit;
-
-}
-
 .header {
   color: white;
   font-family: timesnewroman, serif;
@@ -43,7 +16,67 @@ a:visited {
   margin: 0 auto;
 }
 
-.sidebar{
-  float: center;
+.nav1 {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 25% 25% 25% 25%;
+  color: #fff;
+  font-style: italic;
+  height: 100px;
+  text-align: center;
+  
 
+
+}
+
+.happyhour {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-content: center;
+}
+
+.partytime {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.breakfast {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+
+}
+
+.lunch {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+.dinner {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.box-1 {
+  background-image: url(../assets/backgrounds/foodsBg.jpg);
+  color: #fff;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.subfooter {
+  display: block;
+  length: 50%;
 }
