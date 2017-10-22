@@ -3,13 +3,20 @@
   padding: 0;
 }
 
-<<<<<<< HEAD
+#clickable {
+  cursor: pointer;
+  color: white;
+}
+
+#clickable:hover {
+  text-decoration: none;
+  color: black;
+}
+
 #food {
   border: thick black solid;
 }
 
-=======
->>>>>>> ead3c56072dc46e05a4f4f03a938816ae32647ee
 .header {
   color: white;
   font-family: timesnewroman, serif;
@@ -29,10 +36,9 @@
   grid-template-columns: 25% 25% 25% 25%;
   color: #fff;
   font-style: italic;
-  height: 100px;
+  height: 300px;
   text-align: center;
 }
-
 
 #image {
   height: auto;
@@ -41,7 +47,6 @@
 .nav1:hover #image {
   opacity: 0.5;
 }
-
 
 .happyhour {
   grid-column-start: 1;
