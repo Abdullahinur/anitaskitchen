@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+<<<<<<< HEAD
 #clickable {
   cursor: pointer;
   color: white;
@@ -17,9 +18,14 @@
   border: thick black solid;
 }
 
+=======
+#food {
+  border: thick black solid;
+}
+>>>>>>> fc89c9a09f6f232fcbf5e896dfe9992787e822a1
 .header {
   color: white;
-  font-family: timesnewroman, serif;
+  font-family: Arial, serif;
   text-align: center;
   background-image: url(../assets/backgrounds/landing.jpg);
   background-repeat: no-repeat;
