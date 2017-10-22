@@ -12,9 +12,9 @@
 >>>>>>> ead3c56072dc46e05a4f4f03a938816ae32647ee
 .header {
   color: white;
-  font-family: timesnewroman, serif;
+  font-family: Arial, serif;
   text-align: center;
-  background-image: url(../assets/backgrounds/landing.jpg);
+  background-image: url(/assets/backgrounds/landing.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
