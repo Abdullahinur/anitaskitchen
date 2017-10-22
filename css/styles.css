@@ -3,12 +3,11 @@
   padding: 0;
 }
 
-<<<<<<< HEAD
 .header {
   color: white;
   font-family: timesnewroman, serif;
   text-align: center;
-  background-image: url(assets/backgrounds/landing.jpg);
+  background-image: url(../assets/backgrounds/landing.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
