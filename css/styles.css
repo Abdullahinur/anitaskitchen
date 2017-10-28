@@ -137,6 +137,10 @@
   margin-top: 40px;
 }
 
+input {
+  border-radius: 20%;
+}
+
 .innerbox {
   border-top: 100px;
   border: 1px #ccc solid;
