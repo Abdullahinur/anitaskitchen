@@ -156,6 +156,11 @@
 
 
 }
+
+.btn {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
 button {
   background-color: #F15A29;
   border-radius: 5px;
