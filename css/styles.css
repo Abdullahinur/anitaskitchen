@@ -5,12 +5,13 @@
 
 .header img {
   border-radius: 50%;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
+  -webkit-transition: -webkit-transform 100s ease-in-out;
+  transition: transform 100s ease-in-out;
 }
+
 .header img:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-transform: rotate(288000deg);
+  transform: rotate(288000deg);
 }
 
 #clickable {
@@ -29,6 +30,11 @@
 
 #food {
   border: thick black solid;
+}
+
+.my-center {
+align-content: space-around;
+color: pink;
 }
 
 .header {
@@ -66,6 +72,7 @@
   grid-column-start: 1;
   grid-column-end: 2;
   font-weight: bolder;
+  font-size: 40px;
 }
 
 .partytime {
@@ -82,6 +89,9 @@
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Tangerine;
+  font-size: 40px;
+  font-style: normal;
 }
 
 .lunch {
@@ -92,6 +102,9 @@
   font-weight: bolder;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Tangerine;
+  font-size: 40px;
+  font-style: normal;
 }
 
 .dinner {
@@ -102,6 +115,9 @@
   font-weight: bolder;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Tangerine;
+  font-size: 40px;
+  font-style: normal;
 }
 
 .container {
@@ -121,6 +137,10 @@
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.fast-food {
+  color: pink;
 }
 
 .box-2 {
@@ -148,19 +168,19 @@
   font-family: Arial, serif;
   margin-top: 40px;
 }
+
 .email-text {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-
-
 }
 
 .btn {
   margin-bottom: 10px;
   margin-left: 20px;
 }
+
 button {
   background-color: #F15A29;
   border-radius: 5px;
@@ -171,6 +191,9 @@ button {
   font-weight: bold;
 }
 
+.btn-border {
+  border: 1px solid #F15A29;
+}
 
 input {
   border-radius: 5px;
@@ -202,7 +225,7 @@ input {
   text-align: center;
 }
 
-#facebook{
+#facebook {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;

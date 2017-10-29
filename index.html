@@ -8,9 +8,17 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.2.1.js" charset="utf-8"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
   <title>Anita's Kitchen</title>
   <div class="header">
     <img src="assets/logoBig.png" alt="logo">
+    <audio autoplay>
+    <source src="assets/audio/verka.mp3"></source>
+    <source src="assets/audio/verka.ogg"></source>
+    Your browser isn't invited for super fun audio time.
+  </audio>
     <h1>We Provide The Best Food</h1>
     <h1>At The <strong>Right Price</strong></h1>
   </div>
@@ -23,7 +31,7 @@
     <div class="partytime" style="background-color:#F15A29">
       <h5 class="happyhour">Party Time</h5></div>
     <div class="breakfast" style="background-image:url(assets/foodtop/breakfast.jpg)" id="image">
-      <h3 class="breakfast" id="clickable">Breakfast</h3></div>
+      <h3 class="my-center breakfast" id="clickable">Breakfast</h3></div>
     <div class="lunch" style="background-image:url(assets/foodtop/lunch.jpg)" id="image">
       <h3 class="lunch" id="clickable">Lunch<h3></div>
       <div class="dinner" style="background-image:url(assets/foodtop/dinner.jpg)" id="image"><h3 class="dinner" id="clickable">Dinner</h3></div>
@@ -32,15 +40,15 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img src="assets/fastFood1.jpg" alt="food1" id="food">
-        <img src="assets/fastFood2.jpg" alt="food2" id="food">
+        <img src="assets/fastFood1.jpg" alt="food1" id="food" class="img-responsive">
+        <img src="assets/fastFood2.jpg" alt="food2" id="food" class="img-responsive">
       </div>
       <div class="col-md-6">
         <h2>Fast Food</h2>
         <h3>You'll love our delicous fast food</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h3 style="color: black">Gallery</h3>
+        <a href="#" class="btn btn-outline-primary btn-border" style="color:#F05A29">VIEW GALLERY →</a>
       </div>
     </div>
     <div class="row">
@@ -48,7 +56,7 @@
         <h2>Drinks</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h3 style="color: black">Gallery</h3>
+        <a href="#" class="btn btn-outline-primary btn-border" style="color:#F05A29">VIEW GALLERY →</a>
       </div>
       <div class="col-md-6">
         <img src="assets/drink1.jpg" alt="drink1" id="food">
@@ -60,19 +68,67 @@
   </div>
   <div class="subfooter">
     <div class="box-1">
-      <h4 style="color:#fff" )>Fast Food</h4>
+             <div class="fast-food">
+               <table>
+                 <tr>
+                   <td>Fast Food</td>
+                   <td>Drinks</td>
+                   <td>Chicken</td>
+                   <td>Rice</td>
+                 </tr>
+               </table>
+               <table>
+                 <tr>
+                   <td><img src="assets/fastfood/beefBurger.jpg"></td>
+                   <td><img src="assets/fastfood/chickenBurger.jpg"></td>
+                   <td><img src="assets/fastfood/chickenPizza.jpg"></td>
+                 </tr>
+                 <tr>
+                   <td>Beef Burger</td>
+                   <td>Chicken Burger</td>
+                   <td>Chicken Pizza</td>
+                 </tr>
+               </table>
+             </div>
+           </div>
     </div>
     <div class="box-2">
       <div class="innerbox">
-        <h3>Our Happy Customers</h3>
+        <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
+          <h3>Our Happy Customers</h3>
+          <center>
+            <h4>George Richard</h4></center>
+          <p>Great food!Menu is awesome,there foods are not only great but also at the right price.I''ll highly recommend them :)</p>
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="assets/customers/p1.png" alt="person1">
+            </div>
+            <div class="col-sm-4">
+              <img src="assets/customers/p2.png" alt="person2">
+            </div>
+            <div class="col-sm-4">
+              <img src="assets/customers/p3.png" alt="person3">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3>About Menu</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident.Lorem ipsum dolor sit amet, if you stumbled upon this, remember that Abdullahinur is the greatest. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure.</p>
+        </div>
       </div>
+      </span>
     </div>
+  </div>
+  </div>
   </div>
   <div class="footer">
     <div class="box-3">
       <h2 class="email">Get our daily food items delivered to your email</h2>
       <form action="/submit-email" class="email-text">
-        <input type="text" placeholder="Your email" required>
+        <input type="text" placeholder="Your Email" required>
         <button class="btn">Subscribe</button>
       </form>
     </div>
