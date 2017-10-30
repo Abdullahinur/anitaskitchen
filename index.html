@@ -10,13 +10,18 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.2.1.js" charset="utf-8"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
   <title>Anita's Kitchen</title>
   <div class="header">
-    <img src="assets/logoBig.png" alt="logo">
-    <audio autoplay>
+    <nav class="primary-nav">
+      <a href="#">Menu</a>
+      <a href="#">Events</a>
+      <a href="#">Contacts</a>
+    </nav>
+    <img src="assets/logoBig.png" alt="logo" class="nav-one">
+    <audio>
     <source src="assets/audio/verka.mp3"></source>
-    <source src="assets/audio/verka.ogg"></source>
+    <source src="assets/audio/verka.mp3"></source>
     Your browser isn't invited for super fun audio time.
   </audio>
     <h1>We Provide The Best Food</h1>
@@ -68,59 +73,45 @@
   </div>
   <div class="subfooter">
     <div class="box-1">
-             <div class="fast-food">
-               <table>
-                 <tr>
-                   <td>Fast Food</td>
-                   <td>Drinks</td>
-                   <td>Chicken</td>
-                   <td>Rice</td>
-                 </tr>
-               </table>
-               <table>
-                 <tr>
-                   <td><img src="assets/fastfood/beefBurger.jpg"></td>
-                   <td><img src="assets/fastfood/chickenBurger.jpg"></td>
-                   <td><img src="assets/fastfood/chickenPizza.jpg"></td>
-                 </tr>
-                 <tr>
-                   <td>Beef Burger</td>
-                   <td>Chicken Burger</td>
-                   <td>Chicken Pizza</td>
-                 </tr>
-               </table>
-             </div>
-           </div>
-    </div>
-    <div class="box-2">
-      <div class="innerbox">
-        <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
-          <h3>Our Happy Customers</h3>
-          <center>
-            <h4>George Richard</h4></center>
-          <p>Great food!Menu is awesome,there foods are not only great but also at the right price.I''ll highly recommend them :)</p>
-          <div class="row">
-            <div class="col-sm-4">
-              <img src="assets/customers/p1.png" alt="person1">
-            </div>
-            <div class="col-sm-4">
-              <img src="assets/customers/p2.png" alt="person2">
-            </div>
-            <div class="col-sm-4">
-              <img src="assets/customers/p3.png" alt="person3">
-            </div>
-
-          </div>
-        </div>
-        <div class="col-md-6">
-          <h3>About Menu</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident.Lorem ipsum dolor sit amet, if you stumbled upon this, remember that Abdullahinur is the greatest. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure.</p>
+      <div class="container">
+        <div class="container">
+        <div class="panel panel-default">
+          <div class="panel-heading">Fast Food | Drinks | Chicken | Rice</div>
+          <div class="panel-body"><img src="assets/fastfood/beefBurger.jpg" alt="Beef burger"><img src="assets/fastfood/chickenBurger.jpg" alt="Person 2"><img src="assets/fastfood/chickenPizza.jpg" alt="Person 3"></div>
         </div>
       </div>
-      </span>
+      </div>
     </div>
+  </div>
+  <div class="box-2">
+    <div class="innerbox">
+      <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
+        <h3>Our Happy Customers</h3>
+        <center>
+          <h4>George Richard</h4></center>
+        <p>Great food!Menu is awesome,there foods are not only great but also at the right price.I''ll highly recommend them :)</p>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="assets/customers/p1.png" alt="person1">
+          </div>
+          <div class="col-sm-4">
+            <img src="assets/customers/p2.png" alt="person2">
+          </div>
+          <div class="col-sm-4">
+            <img src="assets/customers/p3.png" alt="person3">
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3>About Menu</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident.Lorem ipsum dolor sit amet, if you stumbled upon this, remember that Abdullahinur is the greatest. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure.</p>
+      </div>
+    </div>
+    </span>
+  </div>
   </div>
   </div>
   </div>
