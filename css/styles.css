@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
 a:link {
   color: black;
 }
+
 h8 {
   font-size: 100px;
 }
@@ -16,7 +18,6 @@ h8 {
   font-family: serif;
 }
 
-
 .header img {
   border-radius: 50%;
   -webkit-transition: -webkit-transform 100s ease-in-out;
@@ -27,6 +28,7 @@ h8 {
   -webkit-transform: rotate(288000deg);
   transform: rotate(288000deg);
 }
+
 
 .overlay {
   height: 100%;
@@ -53,8 +55,7 @@ h8 {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #000
-  display: block;
+  color: #000 display: block;
   transition: 0.3s;
 }
 
@@ -137,14 +138,12 @@ h8 {
   padding: 55.5px 0;
 }
 
-
 .party {
   grid-area: e;
   align-self: center;
   line-height: 200px;
   background-color: #F15A29;
   padding: 55.5px 0;
-
 }
 
 .breakfast {
@@ -155,9 +154,21 @@ h8 {
   font-style: normal;
   text-align: center;
   padding: 104px 0;
-  background-image:url(../assets/foodtop/breakfast.jpg);
+  background-image: url(../assets/foodtop/breakfast.jpg);
 }
 
+.breakfast.color_flip {
+  filter: url(filters.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.breakfast.color_flip:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+}
 #clickable {
   cursor: pointer;
   color: white;
@@ -171,7 +182,20 @@ h8 {
   font-style: normal;
   text-align: center;
   padding: 104px 0;
-  background-image:url(../assets/foodtop/lunch.jpg);
+  background-image: url(../assets/foodtop/lunch.jpg);
+}
+
+.lunch.color_flip {
+  filter: url(filters.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.lunch.color_flip:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.1);
 }
 
 .dinner {
@@ -182,7 +206,20 @@ h8 {
   font-style: normal;
   text-align: center;
   padding: 104px 0;
-  background-image:url(../assets/foodtop/dinner.jpg);
+  background-image: url(../assets/foodtop/dinner.jpg);
+}
+
+.dinner.color_flip {
+  filter: url(filters.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.dinner.color_flip:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.1);
 }
 
 .container {
@@ -222,15 +259,19 @@ h8 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .tabs {
   position: relative;
-  min-height: 200px; /* This part sucks */
+  min-height: 200px;
+  /* This part sucks */
   clear: both;
   margin: 25px 0;
 }
+
 .tab {
   float: left;
 }
+
 .tab label {
   background: #eee;
   padding: 10px;
@@ -239,9 +280,11 @@ h8 {
   position: relative;
   left: 1px;
 }
+
 .tab [type=radio] {
   display: none;
 }
+
 .content {
   position: absolute;
   top: 28px;
@@ -252,12 +295,14 @@ h8 {
   padding: 20px;
   border: 1px solid #ccc;
 }
-[type=radio]:checked ~ label {
+
+[type=radio]:checked~label {
   background: white;
   border-bottom: 1px solid white;
   z-index: 2;
 }
-[type=radio]:checked ~ label ~ .content {
+
+[type=radio]:checked~label~.content {
   z-index: 1;
 }
 
