@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+a:link {
+  color: black;
+}
 h8 {
   font-size: 100px;
 }
@@ -11,23 +13,9 @@ h8 {
   align-self: center;
   text-align: center;
   font-size: 40px;
+  font-family: serif;
 }
 
-.box-shadow-menu {
-  position: relative;
-  padding-left: 1.25em;
-}
-
-.box-shadow-menu:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.25em;
-  width: 1em;
-  height: 0.15em;
-  background: black;
-  box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
-}
 
 .header img {
   border-radius: 50%;
@@ -47,8 +35,8 @@ h8 {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #F15A29;
+  background-color: #F15A29;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -65,13 +53,13 @@ h8 {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #F15A29;
+  color: #000
   display: block;
   transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #F15A29;
+  color: #000;
 }
 
 .overlay .closebtn {
@@ -167,6 +155,12 @@ h8 {
   font-style: normal;
   text-align: center;
   padding: 104px 0;
+  background-image:url(../assets/foodtop/breakfast.jpg);
+}
+
+#clickable {
+  cursor: pointer;
+  color: white;
 }
 
 .lunch {
@@ -177,6 +171,7 @@ h8 {
   font-style: normal;
   text-align: center;
   padding: 104px 0;
+  background-image:url(../assets/foodtop/lunch.jpg);
 }
 
 .dinner {
@@ -187,6 +182,7 @@ h8 {
   font-style: normal;
   text-align: center;
   padding: 104px 0;
+  background-image:url(../assets/foodtop/dinner.jpg);
 }
 
 .container {
@@ -225,6 +221,44 @@ h8 {
   background-image: url(../assets/backgrounds/subscribe.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.tabs {
+  position: relative;
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+}
+.tab [type=radio] {
+  display: none;
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
 }
 
 .email {

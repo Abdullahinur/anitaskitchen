@@ -12,7 +12,7 @@
   <div class="header">
     <span id="lineleft" onclick="openNav()">&#9776;</span>
     <img src="assets/logoBig.png" alt="logo" class="nav-one">
-    <audio>
+    <audio controls>
     <source src="assets/audio/verka.mp3"></source>
     <source src="assets/audio/verka.mp3"></source>
     Your browser isn't invited for super fun audio time.
@@ -25,16 +25,21 @@
 <body>
   <div class="nav1">
     <div class="happyhour">
-      <h5 id="fontsize">Happy Hour</h5></div>
-    <div class="party" >
-      <h5 id="fontsize">Party Time</h5>
+      <h5>Happy Hour</h5></div>
+    <div class="party">
+      <h5>Party Time</h5>
     </div>
-    <div class="breakfast" style="background-image:url(assets/foodtop/breakfast.jpg)">
-      <h8 id="clickable">Breakfast</h8></div>
-    <div class="lunch" style="background-image:url(assets/foodtop/lunch.jpg)">
-      <h8 class="lunch" id="clickable">Lunch<h8></div>
-      <div class="dinner" style="background-image:url(assets/foodtop/dinner.jpg)"><h8 class="dinner" id="clickable">Dinner</h8></div>
 
+    <div class="breakfast">
+      <h8 id="clickable">Breakfast</h8>
+    </div>
+    <div class="lunch">
+      <h8 class="lunch" id="clickable">Lunch
+        <h8>
+    </div>
+    <div class="dinner">
+      <h8 class="dinner" id="clickable">Dinner</h8>
+    </div>
   </div>
   <div class="container">
     <div class="row">
@@ -67,16 +72,42 @@
   </div>
   <div class="subfooter">
     <div class="box-1">
-      <div class="container">
-        <div class="container">
-          <div class="panel panel-default">
-            <div class="panel-heading">Fast Food | Drinks | Chicken | Rice</div>
-            <div class="panel-body"><img src="assets/fastfood/beefBurger.jpg" alt="Beef burger"><img src="assets/fastfood/chickenBurger.jpg" alt="Person 2"><img src="assets/fastfood/chickenPizza.jpg" alt="Person 3"></div>
+      <div class="tabs">
+
+     <div class="tab">
+         <input type="radio" id="tab-1" name="tab-group-1" checked>
+         <label for="tab-1">Tab One</label>
+
+         <div class="content">
+<img src="assets/fastfood/beefBurger.jpg" alt="beef burger">
+             stuff
+         </div>
+     </div>
+
+     <div class="tab">
+         <input type="radio" id="tab-2" name="tab-group-1">
+         <label for="tab-2">Tab Two</label>
+
+         <div class="content">
+<img src="assets/fastfood/chickenBurger.jpg" alt="chicken burger">
+             stuff
+         </div>
+     </div>
+
+      <div class="tab">
+         <input type="radio" id="tab-3" name="tab-group-1">
+         <label for="tab-3">Tab Three</label>
+
+         <div class="content">
+           <img src="assets/fastfood/chickenPizza.jpg" alt="chicken pizza"></div>
+             stuff
+         </div>
+     </div>
+
+  </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
   <div class="box-2">
     <div class="innerbox">
       <div class="col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
@@ -113,7 +144,7 @@
     <div class="box-3">
       <h2 class="email">Get our daily food items delivered to your email</h2>
       <form action="/submit-email" class="email-text">
-        <input type="text" placeholder="Your Email" required>
+        <input type="text" type="submit" placeholder="Your Email" required>
         <button class="btn">Subscribe</button>
       </form>
     </div>
@@ -133,9 +164,12 @@
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-      <a href="#">Contacts</a>
-      <a href="#">Events</a>
-      <a href="#">Menu</a>
+      <ul>
+
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Menu</a></li>
+      </ul>
     </div>
   </div>
   <script src="js/jquery-3.2.1.js"></script>
