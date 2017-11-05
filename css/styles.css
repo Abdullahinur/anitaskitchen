@@ -3,10 +3,21 @@
   padding: 0;
 }
 
+h8 {
+  font-size: 100px;
+}
+
+.h5, h5 {
+  align-self: center;
+  text-align: center;
+  font-size: 40px;
+}
+
 .box-shadow-menu {
   position: relative;
   padding-left: 1.25em;
 }
+
 .box-shadow-menu:before {
   content: "";
   position: absolute;
@@ -15,9 +26,7 @@
   width: 1em;
   height: 0.15em;
   background: black;
-  box-shadow:
-    0 0.25em 0 0 black,
-    0 0.5em 0 0 black;
+  box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
 }
 
 .header img {
@@ -32,53 +41,55 @@
 }
 
 .overlay {
-   height: 100%;
-   width: 0;
-   position: fixed;
-   z-index: 1;
-   top: 0;
-   left: 0;
-   background-color: rgb(0,0,0);
-   background-color: rgba(0,0,0, 0.9);
-   overflow-x: hidden;
-   transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 .overlay-content {
-   position: relative;
-   top: 25%;
-   width: 100%;
-   text-align: center;
-   margin-top: 30px;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .overlay a {
-   padding: 8px;
-   text-decoration: none;
-   font-size: 36px;
-   color: #F15A29;
-   display: block;
-   transition: 0.3s;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #F15A29;
+  display: block;
+  transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-   color: #F15A29;
+  color: #F15A29;
 }
 
 .overlay .closebtn {
-   position: absolute;
-   top: 20px;
-   right: 45px;
-   font-size: 60px;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
 @media screen and (max-height: 450px) {
- .overlay a {font-size: 20px}
- .overlay .closebtn {
-   font-size: 40px;
-   top: 15px;
-   right: 35px;
- }
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 #clickable {
@@ -91,7 +102,6 @@
   color: black;
 }
 
-
 #lineleft {
   position: absolute;
   left: 100px;
@@ -99,10 +109,9 @@
   cursor: context-menu;
 }
 
-
 .my-center {
-align-content: space-around;
-color: pink;
+  align-content: space-around;
+  color: pink;
 }
 
 .header {
@@ -120,16 +129,11 @@ color: pink;
 
 .nav1 {
   display: grid;
-  grid-template-rows: 1;
-  grid-template-columns: 25% 25% 25% 25%;
-  color: #fff;
-  font-style: italic;
-  height: 300px;
-  text-align: center;
-}
-
-#image {
-  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0px;
+  grid-template-areas: "a b c d" "e b c d";
+  align-items: center;
 }
 
 .nav1:hover #image {
@@ -137,56 +141,52 @@ color: pink;
 }
 
 .happyhour {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-area: a;
   font-weight: bolder;
   font-size: 40px;
-  line-height: 1000px;
+  align-self: center;
+  background-color: #C0C0C0;
+  padding: 55.5px 0;
 }
 
-.partytime {
-  grid-column-start: 1;
-  grid-column-end: 2;
+
+.party {
+  grid-area: e;
+  align-self: center;
+  line-height: 200px;
+  background-color: #F15A29;
+  padding: 55.5px 0;
+
 }
 
 .breakfast {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: span 2;
-  font-weight: bolder;
-  height: 100%;
+  grid-area: b;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Tangerine;
-  font-size: 40px;
   font-style: normal;
+  text-align: center;
+  padding: 104px 0;
 }
 
 .lunch {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: span 2;
-  font-weight: bolder;
+  grid-area: c;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Tangerine;
-  font-size: 40px;
   font-style: normal;
+  text-align: center;
+  padding: 104px 0;
 }
 
 .dinner {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: span 2;
-  font-weight: bolder;
+  grid-area: d;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Tangerine;
-  font-size: 40px;
   font-style: normal;
+  text-align: center;
+  padding: 104px 0;
 }
 
 .container {
