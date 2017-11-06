@@ -261,7 +261,7 @@ h8 {
   min-height: 200px;
   clear: both;
   margin: 25px 0px 0px 6px;
-  padding: 119px 0px 0px 402px;
+  padding: 139px 0px 0px 282px;
 }
 
 .tab {
@@ -270,11 +270,14 @@ h8 {
 
 .tab label {
   background: #eee;
-  padding: 10px;
+  padding: 10px 0px 90px 246px;
   border: 1px solid #ccc;
   margin-left: -1px;
   position: relative;
   left: 1px;
+  color: #F15A29;
+  text-align: left;
+  padding: 12px 230px 10px 48px;
 }
 
 .tab [type=radio] {
@@ -288,9 +291,9 @@ h8 {
   background: white;
   right: 471px;
   bottom: -188px;
-  padding: 112px 124px 0px 114px;
+  padding: 118px 0px 0px 171px;
   border: 1px solid #ccc;
-  margin: 67px -156px -234px 154px;
+  margin: 68px -157px -231px 34px;
 }
 
 [type=radio]:checked~label {
