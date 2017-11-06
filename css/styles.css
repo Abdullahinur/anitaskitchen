@@ -169,10 +169,6 @@ h8 {
   -webkit-filter: grayscale(0);
   -webkit-transform: scale(1.1);
 }
-#clickable {
-  cursor: pointer;
-  color: white;
-}
 
 .lunch {
   grid-area: c;
@@ -182,12 +178,11 @@ h8 {
   font-style: normal;
   text-align: center;
   padding: 104px 0;
-  background-image: url(../assets/foodtop/lunch.jpg);
 }
-
 .lunch.color_flip {
+  background-image: url(../assets/foodtop/lunch.jpg);
   filter: url(filters.svg#grayscale);
-  filter: gray;
+  filter: gray;background-image: url(../assets/foodtop/lunch.jpg);
   -webkit-filter: grayscale(1);
   -webkit-transition: all .5s ease-in-out;
 }
