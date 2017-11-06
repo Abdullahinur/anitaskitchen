@@ -409,7 +409,9 @@ input {
   grid-row-end: 5;
 }
 
-.subfooter {
-  display: block;
-  length: 50%;
-}
+span#arrow1 {
+    padding: 0px;
+    padding: 0px;
+    color: #F15A29;
+    font-size: -webkit-xxx-large;
+  }
