@@ -29,7 +29,6 @@ h8 {
   transform: rotate(288000deg);
 }
 
-
 .overlay {
   height: 100%;
   width: 0;
@@ -169,10 +168,6 @@ h8 {
   -webkit-filter: grayscale(0);
   -webkit-transform: scale(1.1);
 }
-#clickable {
-  cursor: pointer;
-  color: white;
-}
 
 .lunch {
   grid-area: c;
@@ -182,12 +177,13 @@ h8 {
   font-style: normal;
   text-align: center;
   padding: 104px 0;
-  background-image: url(../assets/foodtop/lunch.jpg);
 }
 
 .lunch.color_flip {
+  background-image: url(../assets/foodtop/lunch.jpg);
   filter: url(filters.svg#grayscale);
   filter: gray;
+  background-image: url(../assets/foodtop/lunch.jpg);
   -webkit-filter: grayscale(1);
   -webkit-transition: all .5s ease-in-out;
 }
@@ -263,9 +259,9 @@ h8 {
 .tabs {
   position: relative;
   min-height: 200px;
-  /* This part sucks */
   clear: both;
-  margin: 25px 0;
+  margin: 25px 0px 0px 6px;
+  padding: 119px 0px 0px 402px;
 }
 
 .tab {
@@ -287,13 +283,14 @@ h8 {
 
 .content {
   position: absolute;
-  top: 28px;
-  left: 0;
+  top: 113px;
+  left: 248px;
   background: white;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
+  right: 471px;
+  bottom: -188px;
+  padding: 112px 124px 0px 114px;
   border: 1px solid #ccc;
+  margin: 67px -156px -234px 154px;
 }
 
 [type=radio]:checked~label {
@@ -304,6 +301,12 @@ h8 {
 
 [type=radio]:checked~label~.content {
   z-index: 1;
+}
+
+#arrow {
+  font-size: 100px;
+  font-weight: bold;
+  color: red;
 }
 
 .email {
